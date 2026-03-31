@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PBN Link Building | Premium PBN Backlinks & Network Building</title>
+<meta name="description" content="Premium PBN link building agency. Buy PBN backlinks, build your own PBN network, or acquire aged PBN domains. Trusted by serious SEOs worldwide.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c8400a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'></path><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'></path></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ORIGINAL VARIABLES */
+:root {
+  --ink: #0d0d0d;
+  --paper: #f5f2ec;
+  --accent: #c8400a;
+  --gold: #c9a84c;
+  --muted: #6b6560;
+  --border: #e0dbd2;
+  --white: #ffffff;
+  --dark-bg: #111008;
+  --card-bg: #faf8f4;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; line-height: 1.15; font-weight: 700; }
+.serif { font-family: 'DM Serif Display', serif; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---- DYNAMIC ANIMATIONS ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+  will-change: opacity, transform;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+
+@keyframes fadeUpIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- NAV ---- */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--paper);
+  border-bottom: 1px solid var(--border);
+  padding: 0 5%;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 68px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.logo {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo svg { height: 24px; width: 24px; stroke: var(--accent); }
+.logo span { color: var(--accent); }
+
+.nav-links { display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; }
+.nav-links a {
+  font-size: 0.88rem; font-family: 'Outfit', sans-serif; font-weight: 600;
+  color: var(--muted); letter-spacing: 0.03em; text-transform: uppercase;
+  text-decoration: none; transition: color 0.2s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+.nav-cta { background: var(--accent) !important; color: var(--white) !important; padding: 0.45rem 1.1rem; border-radius: 3px; font-size: 0.82rem !important; transition: transform 0.2s ease, background 0.2s ease; }
+.nav-cta:hover { background: #a33408 !important; transform: translateY(-2px); }
+.hamburger { display: none; cursor: pointer; font-size: 1.4rem; background: none; border: none; }
+
+/* ---- SECTIONS ---- */
+.page { display: none; }
+.page.active { display: block; animation: fadeUpIn 0.5s ease; }
+section { padding: 5rem 5%; }
+.container { max-width: 1160px; margin: 0 auto; }
+
+/* ---- HERO ---- */
+.hero { background: var(--dark-bg); color: var(--white); padding: 7rem 5% 6rem; position: relative; overflow: hidden; }
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 80% 50%, rgba(200,64,10,0.18) 0%, transparent 70%),
+              radial-gradient(ellipse 50% 80% at 10% 80%, rgba(201,168,76,0.08) 0%, transparent 60%);
+}
+.hero-inner { position: relative; z-index: 1; max-width: 780px; }
+.hero-inner > * { animation: fadeUpIn 0.8s ease backwards; }
+.hero-tag {
+  display: inline-block; font-family: 'Outfit', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--gold); border: 1px solid rgba(201,168,76,0.4);
+  padding: 0.3rem 0.9rem; border-radius: 2px; margin-bottom: 1.8rem;
+}
+.hero h1 { font-size: clamp(2.6rem, 5.5vw, 4.2rem); font-weight: 800; margin-bottom: 1.4rem; letter-spacing: -0.03em; animation-delay: 0.1s; }
+.hero h1 em { font-style: italic; font-family: 'DM Serif Display', serif; color: var(--accent); }
+.hero p { font-size: 1.12rem; color: rgba(255,255,255,0.72); max-width: 580px; margin-bottom: 2.5rem; animation-delay: 0.2s; }
+.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; animation-delay: 0.3s; }
+.btn {
+  font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 0.88rem; letter-spacing: 0.04em;
+  text-transform: uppercase; padding: 0.85rem 1.8rem; border-radius: 3px; border: none;
+  cursor: pointer; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); display: inline-block; text-decoration: none !important;
+}
+.btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+.btn-primary { background: var(--accent); color: var(--white); }
+.btn-primary:hover { background: #a33408; }
+.btn-outline { background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.35); }
+.btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.05); }
+.btn-dark { background: var(--ink); color: var(--white); }
+.btn-dark:hover { background: #2a2a2a; }
+
+/* STATS BAR */
+.stats-bar { background: var(--white); border-bottom: 1px solid var(--border); padding: 3rem 5%; }
+.stats-grid { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; text-align: center; }
+.stat-num { font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 800; color: var(--accent); line-height: 1.2; margin-bottom: 0.4rem; }
+.stat-label { font-size: 0.83rem; color: var(--muted); font-weight: 500; }
+
+/* SECTION TITLES */
+.section-tag { font-family: 'Outfit', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem; display: block; }
+.section-title { font-size: clamp(1.9rem, 3.5vw, 2.8rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1rem; }
+.section-sub { font-size: 1.05rem; color: var(--muted); max-width: 800px; margin-bottom: 2rem; }
+
+/* SERVICES CARDS */
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; margin-top: 3.5rem; background: var(--border); }
+.service-card { background: var(--white); padding: 2.8rem 2.4rem; cursor: pointer; transition: all 0.3s ease; position: relative; z-index: 1; }
+.service-card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0,0,0,0.08); z-index: 2; border-radius: 4px; }
+.service-icon { width: 46px; height: 46px; background: var(--accent); border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; font-size: 1.2rem; color: #fff; transition: transform 0.3s ease;}
+.service-card:hover .service-icon { transform: scale(1.1) rotate(5deg); }
+.service-card h3 { font-size: 1.25rem; margin-bottom: 0.8rem; font-weight: 700; }
+.service-card p { font-size: 0.95rem; color: var(--muted); margin-bottom: 1.4rem; }
+.service-price { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--ink); }
+.service-price span { font-size: 0.8rem; font-weight: 400; color: var(--muted); }
+
+/* FEATURES LIST */
+.features-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-top: 3rem; }
+.feature-item { display: flex; gap: 1.1rem; margin-bottom: 1.8rem; transition: transform 0.2s ease; }
+.feature-item:hover { transform: translateX(5px); }
+.feature-dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0; margin-top: 0.55rem; box-shadow: 0 0 10px rgba(200,64,10,0.4); }
+.feature-item h4 { font-size: 1rem; margin-bottom: 0.25rem; font-weight: 700;}
+.feature-item p { font-size: 0.92rem; color: var(--muted); }
+
+/* CONTENT BLOCKS FOR EXPANDED TEXT */
+.text-content { max-width: 860px; margin-bottom: 3rem; }
+.text-content p { margin-bottom: 1.5rem; color: var(--ink); }
+.text-content h3 { font-size: 1.4rem; margin: 2rem 0 1rem 0; color: var(--ink); }
+
+/* PROCESS */
+.process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5px; background: var(--border); margin-top: 3rem; }
+.process-step { background: var(--paper); padding: 2.2rem 1.8rem; transition: background 0.3s ease; }
+.process-step:hover { background: var(--white); }
+.step-num { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 3rem; color: var(--border); line-height: 1; margin-bottom: 1rem; transition: color 0.3s ease; }
+.process-step:hover .step-num { color: var(--accent); opacity: 0.3; }
+.process-step h4 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+.process-step p { font-size: 0.9rem; color: var(--muted); }
+
+/* TESTIMONIALS */
+.testimonials { background: var(--dark-bg); color: var(--white); }
+.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: rgba(255,255,255,0.08); margin-top: 3rem; }
+.testi-card { background: var(--dark-bg); padding: 2.4rem; border: 1px solid rgba(255,255,255,0.06); transition: transform 0.3s ease; }
+.testi-card:hover { transform: translateY(-5px); background: #1a180d; }
+.testi-stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 1rem; letter-spacing: 2px;}
+.testi-text { font-size: 0.97rem; color: rgba(255,255,255,0.75); margin-bottom: 1.5rem; font-style: italic; }
+.testi-author { font-family: 'Outfit', sans-serif; font-size: 0.85rem; font-weight: 600; color: var(--gold); }
+
+/* CTA BAND */
+.cta-band { background: var(--accent); color: var(--white); padding: 4.5rem 5%; text-align: center; position: relative; overflow: hidden;}
+.cta-band::after { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%); pointer-events:none;}
+.cta-band h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin-bottom: 1rem; position:relative; z-index:2;}
+.cta-band p { font-size: 1.05rem; opacity: 0.88; margin-bottom: 2rem; max-width: 520px; margin-left: auto; margin-right: auto; position:relative; z-index:2;}
+.btn-white { background: var(--white); color: var(--accent); position:relative; z-index:2;}
+.btn-white:hover { background: var(--paper); }
+
+/* ---- PRICING TABLES ---- */
+.pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; background: var(--border); margin-top: 3rem; }
+.pricing-card { background: var(--white); padding: 2.8rem; display: flex; flex-direction: column; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.pricing-card:hover { transform: scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.08); z-index: 5; }
+.pricing-card.featured { background: var(--ink); color: var(--white); transform: scale(1.03); box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
+.pricing-card.featured:hover { transform: scale(1.05); box-shadow: 0 25px 50px rgba(0,0,0,0.25); }
+.pricing-tier { font-family: 'Outfit', sans-serif; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem; }
+.pricing-card.featured .pricing-tier { color: var(--gold); }
+.pricing-price { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 3rem; line-height: 1; margin-bottom: 0.3rem; }
+.pricing-per { font-size: 0.88rem; color: var(--muted); margin-bottom: 1.8rem; }
+.pricing-card.featured .pricing-per { color: rgba(255,255,255,0.5); }
+.pricing-features { list-style: none; margin-bottom: 2rem; flex-grow: 1;}
+.pricing-features li { padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 0.93rem; display: flex; gap: 0.7rem; align-items: flex-start; }
+.pricing-card.featured .pricing-features li { border-bottom-color: rgba(255,255,255,0.1); }
+.pricing-features li::before { content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+.pricing-card.featured .pricing-features li::before { color: var(--gold); }
+
+/* ---- FAQ ---- */
+.faq-list { margin-top: 2.5rem; }
+.faq-item { border-bottom: 1px solid var(--border); padding: 1.5rem 0; transition: background 0.3s; }
+.faq-item:hover { background: rgba(255,255,255,0.5); }
+.faq-question { font-family: 'Outfit', sans-serif; font-size: 1.05rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; user-select: none; }
+.faq-question::after { content: '+'; font-size: 1.4rem; color: var(--accent); flex-shrink: 0; transition: transform 0.3s; }
+.faq-item.open .faq-question::after { transform: rotate(45deg); }
+.faq-answer { display: none; margin-top: 1rem; font-size: 0.97rem; color: var(--muted); max-width: 820px; animation: fadeUpIn 0.3s ease; }
+.faq-item.open .faq-answer { display: block; }
+
+/* ---- RESOURCE POSTS ---- */
+.resources-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: var(--border); margin-top: 3rem; }
+.resource-card { background: var(--white); padding: 2.2rem; cursor: pointer; transition: all 0.3s ease; }
+.resource-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.04); }
+.resource-tag { font-family: 'Outfit', sans-serif; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.9rem; }
+.resource-card h3 { font-size: 1.08rem; margin-bottom: 0.6rem; line-height: 1.3; }
+.resource-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.6; }
+.resource-read { font-family: 'Outfit', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); margin-top: 1.2rem; display: inline-block; transition: transform 0.2s;}
+.resource-card:hover .resource-read { transform: translateX(5px); }
+
+/* ---- CONTACT FORM ---- */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 2rem;}
+.contact-info { background: var(--white); padding: 3rem; border-radius: 4px; border: 1px solid var(--border); }
+.contact-form-wrapper { background: var(--white); padding: 3rem; border: 1px solid var(--border); border-radius: 4px; }
+.form-group { margin-bottom: 1.5rem; }
+.form-label { display: block; font-family: 'Outfit', sans-serif; font-size: 0.9rem; font-weight: 600; color: var(--ink); margin-bottom: 0.5rem; }
+.form-control { width: 100%; padding: 1rem; border: 1px solid var(--border); border-radius: 4px; font-family: 'DM Sans', sans-serif; font-size: 1rem; color: var(--ink); background: var(--paper); transition: border-color 0.3s, background-color 0.3s; }
+.form-control:focus { outline: none; border-color: var(--accent); background: var(--white); }
+
+/* ---- FOOTER ---- */
+footer { background: var(--ink); color: rgba(255,255,255,0.6); padding: 4rem 0 2rem; }
+.footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 2rem; }
+.footer-logo { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--white); margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;}
+.footer-logo svg { height: 24px; width: 24px; stroke: var(--accent); }
+.footer-logo span { color: var(--accent); }
+.footer-desc { font-size: 0.9rem; line-height: 1.7; max-width: 280px; }
+.footer-col h4 { font-family: 'Outfit', sans-serif; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 1.2rem; }
+.footer-col a { display: block; font-size: 0.9rem; color: rgba(255,255,255,0.55); margin-bottom: 0.6rem; text-decoration: none; transition: color 0.2s, transform 0.2s; }
+.footer-col a:hover { color: var(--accent); transform: translateX(3px); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; flex-wrap: wrap; gap: 1rem; }
+.footer-bottom a { color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s;}
+.footer-bottom a:hover { color: var(--accent); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 2rem;}
+  .services-grid { grid-template-columns: 1fr; }
+  .features-cols { grid-template-columns: 1fr; gap: 1rem; }
+  .process-steps { grid-template-columns: repeat(2, 1fr); }
+  .testi-grid { grid-template-columns: 1fr; }
+  .resources-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+  nav.open .nav-links {
+    display: flex; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0;
+    background: var(--paper); padding: 1.5rem 5%; border-bottom: 1px solid var(--border); z-index: 200; gap: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  .pricing-card.featured { transform: scale(1); }
+  .pricing-card.featured:hover { transform: scale(1.02); }
+}
+@media (max-width: 600px) {
+  .resources-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .contact-info, .contact-form-wrapper { padding: 2rem; }
+}
+
+/* Base style for article content pages */
+.article-header { background: var(--dark-bg); color: var(--white); padding: 6rem 5% 4rem; text-align: center; }
+.article-header h1 { font-size: clamp(2.2rem, 4vw, 3.5rem); max-width: 900px; margin: 0 auto; line-height: 1.2; }
+.article-meta { color: var(--gold); font-family: 'Outfit', sans-serif; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1rem; display: block; }
+.article-body { padding: 4rem 5%; background: var(--white); }
+.article-content { max-width: 800px; margin: 0 auto; font-size: 1.12rem; line-height: 1.8; color: var(--ink); }
+.article-content h2 { margin-top: 3rem; margin-bottom: 1rem; font-size: 2rem; color: var(--ink); font-family: 'Outfit', sans-serif; font-weight: 800; letter-spacing: -0.02em;}
+.article-content h3 { margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; color: var(--ink); font-family: 'Outfit', sans-serif; font-weight: 700;}
+.article-content p { margin-bottom: 1.5rem; }
+.article-content ul, .article-content ol { margin-bottom: 1.5rem; padding-left: 2rem; }
+.article-content li { margin-bottom: 0.5rem; }
+.article-content a { color: var(--accent); font-weight: 600; text-decoration: underline; }
+.article-content a:hover { color: var(--ink); }
+.article-content blockquote { border-left: 4px solid var(--accent); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: var(--muted); font-size: 1.2rem; }
+</style>
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="#" class="logo" data-page="home">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+    PBN<span>Link</span>Building
+  </a>
+  <div class="nav-links">
+    <a href="#" data-page="home">Home</a>
+    <a href="#" data-page="buy-pbn-links">Buy PBN Links</a>
+    <a href="#" data-page="buy-pbn-network">Build Network</a>
+    <a href="#" data-page="buy-pbn-domains">PBN Domains</a>
+    <a href="#" data-page="resources">Resources</a>
+    <a href="#" data-page="contact">Contact</a>
+    <a href="#" data-page="buy-pbn-links" class="btn nav-cta">Get Started</a>
+  </div>
+  <button class="hamburger" id="hamburger">☰</button>
+</nav>
+
+<div class="page active" id="page-home">
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-tag">Premium PBN Agency · Est. 2016</span>
+      <h1>The Gold Standard in <em>PBN Link Building</em></h1>
+      <p>We operate one of the most sophisticated private blog networks in the industry — clean, aged, real-traffic domains that pass authority without leaving footprints. No shortcuts. No spam. Just pure ranking power.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn btn-primary" data-page="buy-pbn-links">Buy PBN Links</a>
+        <a href="#" class="btn btn-outline" data-page="buy-pbn-network">Build My Network</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-bar reveal">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-num">4,800+</div>
+        <div class="stat-label">Active PBN Domains</div>
+      </div>
+      <div>
+        <div class="stat-num">12K+</div>
+        <div class="stat-label">Links Delivered</div>
+      </div>
+      <div>
+        <div class="stat-num">98%</div>
+        <div class="stat-label">Client Retention Rate</div>
+      </div>
+      <div>
+        <div class="stat-num">8 yrs</div>
+        <div class="stat-label">Industry Experience</div>
+      </div>
+    </div>
+  </div>
+
+  <section style="background: var(--white);">
+    <div class="container reveal">
+      <span class="section-tag">What We Offer</span>
+      <h2 class="section-title">Three Ways to Dominate Your Niche</h2>
+      <p class="section-sub">Whether you need ready-to-fire backlinks, a full private network, or hand-picked aged domains — we have the infrastructure already built.</p>
+      <div class="services-grid">
+        <div class="service-card reveal delay-1" data-nav="buy-pbn-links">
+          <div class="service-icon">🔗</div>
+          <h3>Buy PBN Links</h3>
+          <p>Instant access to our vetted network. Each placement is on a live, aged site with real organic traffic — not a ghost domain.</p>
+          <div class="service-price">From $6<span>/link (Standard)</span></div>
+          <br><a href="#" class="btn btn-dark" data-page="buy-pbn-links" style="margin-top:1rem;font-size:0.82rem;padding:0.6rem 1.2rem;">See Packages →</a>
+        </div>
+        <div class="service-card reveal delay-2" data-nav="buy-pbn-network">
+          <div class="service-icon">🌐</div>
+          <h3>PBN Network Build</h3>
+          <p>We design, build, and configure your own private blog network from scratch — fully turnkey, de-footprinted, and handed over to you.</p>
+          <div class="service-price">From $100<span>/domain built</span></div>
+          <br><a href="#" class="btn btn-dark" data-page="buy-pbn-network" style="margin-top:1rem;font-size:0.82rem;padding:0.6rem 1.2rem;">See Packages →</a>
+        </div>
+        <div class="service-card reveal delay-3" data-nav="buy-pbn-domains">
+          <div class="service-icon">📂</div>
+          <h3>PBN Domains</h3>
+          <p>Buy aged, expired domains with real backlink profiles and topical authority. Pre-vetted and ready for your network or direct 301.</p>
+          <div class="service-price">$150–$1,500+<span>/domain</span></div>
+          <br><a href="#" class="btn btn-dark" data-page="buy-pbn-domains" style="margin-top:1rem;font-size:0.82rem;padding:0.6rem 1.2rem;">See Domains →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container reveal">
+      <span class="section-tag">The Reality of SEO</span>
+      <h2 class="section-title">Why Elite Agencies Rely on PBN Link Building</h2>
+      <div class="text-content">
+        <p>Let’s cut through the noise and industry fluff. If you are operating in highly competitive, cutthroat verticals—finance, legal, iGaming, enterprise SaaS, or <a href="https://business.google.com/us/resources/articles/lead-generation/" target="_blank" rel="noopener noreferrer">local lead generation</a> in major metros—traditional outreach and digital PR rarely cut it alone. You need absolute control over your anchor text. You need predictability in your link velocity. Most importantly, you need raw, unadulterated ranking power that your competitors cannot easily replicate or reverse-engineer.</p>
+        <p>That is precisely what elite <strong>PBN link building</strong> delivers, provided it is executed with paranoia-level attention to detail.</p>
+        <p>The landscape of search engine optimization has dramatically shifted over the last decade. The days of throwing up spun content on cheap SEO hosting, slapping a default WordPress theme on it, and watching your money site rankings soar are dead. Today, a private blog network must mimic the open web perfectly. If a manual reviewer or an advanced algorithmic filter can spot your network, it isn’t a network; it is a massive liability to your business.</p>
+        <p>At PBN Link Building, we build assets that withstand the most intense scrutiny. From bespoke premium domain acquisition to dedicated cloud IPs, custom DNS configurations, and deeply researched human-written content, we engineer safety into every single layer of our infrastructure. We build sites that look, feel, and act like real businesses, passionate hobbyist blogs, and authoritative industry portals.</p>
+        
+        <h3>The Economics of PBN Link Building</h3>
+        <p>Let's talk about ROI. In modern link building, a genuine, high-quality guest post on a real, traffic-carrying website with a <a href="https://ahrefs.com/seo/glossary/domain-rating" target="_blank" rel="noopener noreferrer">Domain Rating</a> (DR) of 40 to 60 will easily cost between $150 and $500 per placement. For highly competitive niches, you may need 50 to 100 of these links to see a needle-moving shift in your rankings. That equates to a link building budget of $15,000 to $50,000 just to establish a foothold.</p>
+        <p>Compare this to our Premium PBN Network. For $60 per link, you are receiving placements on domains with the exact same—or better—link profiles (DR 40-80+). You have complete control over the anchor text, the surrounding content is highly optimized for your target keywords, and the placement is guaranteed to be permanent. A campaign of 50 links costs $3,000 instead of $15,000. It is the most cost-effective way to engineer authority at scale, allowing you to reallocate your remaining budget to premium content generation and on-page optimization.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band reveal">
+    <h2>Ready to Move the Needle?</h2>
+    <p>Place your first PBN link order today or talk to our team about a custom strategy for your site.</p>
+    <a href="#" class="btn btn-white" data-page="buy-pbn-links">Start With PBN Links</a>
+  </div>
+</div>
+
+<div class="page" id="page-buy-pbn-links">
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-tag">Rank Higher, Faster</span>
+      <h1>Buy Premium <em>PBN Links</em></h1>
+      <p>Stop wasting budget on rented guest posts that get de-indexed. Acquire permanent, high-authority homepage backlinks from our exclusive, meticulously disguised private blog network.</p>
+      <div class="hero-btns">
+        <a href="#pbn-pricing" class="btn btn-primary" onclick="document.getElementById('pbn-pricing').scrollIntoView({behavior: 'smooth'})">View Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="pbn-pricing" style="background: var(--dark-bg); color: var(--white);">
+    <div class="container reveal">
+      <span class="section-tag" style="color:var(--gold); text-align:center;">Our Packages</span>
+      <h2 class="section-title" style="text-align:center; color:var(--white);">Acquire Unfair Ranking Advantages</h2>
+      <p class="section-sub" style="margin: 0 auto 3rem; text-align:center; color:rgba(255,255,255,0.7);">Choose the authority tier that matches your competitive landscape. All links are permanent homepage placements.</p>
+      
+      <div class="pricing-grid">
+        <div class="pricing-card" style="background:var(--ink); border: 1px solid rgba(255,255,255,0.1); color:var(--white);">
+          <div class="pricing-tier" style="color:var(--accent);">Standard Authority</div>
+          <div class="pricing-price">$6<span style="font-size:1rem; color:var(--muted);"> / link</span></div>
+          <div class="pricing-per" style="color:rgba(255,255,255,0.5);">Perfect for local SEO & medium competition</div>
+          <ul class="pricing-features">
+            <li style="border-bottom-color: rgba(255,255,255,0.1);">Domain Rating (DR): 20 - 40</li>
+            <li style="border-bottom-color: rgba(255,255,255,0.1);">500+ Words Human-Written Content</li>
+            <li style="border-bottom-color: rgba(255,255,255,0.1);">Guaranteed Indexing within 14 days</li>
+            <li style="border-bottom-color: rgba(255,255,255,0.1);">Unique C-Class IP Hosting</li>
+            <li style="border-bottom-color: rgba(255,255,255,0.1);">OBL Strictly Capped at 25</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" style="text-align:center; margin-top:1rem;" onclick="document.getElementById('page-contact').scrollIntoView();">Order Standard Links</a>
+        </div>
+        
+        <div class="pricing-card featured" style="background:var(--white); color:var(--ink);">
+          <div class="pricing-tier" style="color:var(--accent);">Premium Authority</div>
+          <div class="pricing-price" style="color:var(--ink);">$60<span style="font-size:1rem; color:var(--muted);"> / link</span></div>
+          <div class="pricing-per" style="color:var(--muted);">For enterprise, national, and high-stakes niches</div>
+          <ul class="pricing-features">
+            <li style="border-bottom-color: var(--border);">Domain Rating (DR): 40 - 80+</li>
+            <li style="border-bottom-color: var(--border);">1000+ Words Deep Entity-Optimized Content</li>
+            <li style="border-bottom-color: var(--border);">Significant Existing Organic Traffic</li>
+            <li style="border-bottom-color: var(--border);">Premium Custom Web Design & Themes</li>
+            <li style="border-bottom-color: var(--border);">OBL Strictly Capped at 15</li>
+          </ul>
+          <a href="#contact" class="btn btn-dark" style="text-align:center; margin-top:1rem;" onclick="document.getElementById('page-contact').scrollIntoView();">Order Premium Links</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-buy-pbn-network">
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-tag">Turnkey Infrastructure · 100% Ownership</span>
+      <h1>Build Your Own <em>Private Blog Network</em></h1>
+      <p>Stop paying monthly link rentals and start building digital equity. We source the domains, architect the cloud hosting, generate the personas, and write the content. You get the keys to a footprint-free, fully operational SEO superweapon.</p>
+      <div class="hero-btns">
+        <a href="#network-pricing" class="btn btn-primary" onclick="document.getElementById('network-pricing').scrollIntoView({behavior: 'smooth'})">View Build Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="network-pricing" style="background: var(--paper); padding-top:4rem; padding-bottom:4rem; border-top: 1px solid var(--border);">
+    <div class="container reveal">
+      <span class="section-tag" style="text-align: center;">Network Builds</span>
+      <h2 class="section-title" style="text-align: center;">Custom Build Packages</h2>
+      <p class="section-sub" style="margin: 0 auto 3rem; text-align: center;">Fully realized, footprint-free networks handed over to you. Domain acquisition costs are included in the package price.</p>
+      
+      <div class="pricing-grid" style="grid-template-columns: repeat(3, 1fr); gap: 2px;">
+        <div class="pricing-card">
+          <div class="pricing-tier">Starter Network</div>
+          <div class="pricing-price">$100<span style="font-size:1rem; color:var(--muted);"> / build</span></div>
+          <div class="pricing-per">Custom Built Sites</div>
+          <ul class="pricing-features">
+            <li>Domains DR 20+ included</li>
+            <li>Premium diverse hosting setup</li>
+            <li>5 pages of seed content per site</li>
+            <li>Custom logos & Trust pages</li>
+            <li>Full credential handoff</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-page="contact" style="color:var(--ink); border-color:var(--ink); width:100%; text-align:center; margin-top:1rem;">Start Building</a>
+        </div>
+        
+        <div class="pricing-card featured">
+          <div class="pricing-tier">Agency Network</div>
+          <div class="pricing-price">$800</div>
+          <div class="pricing-per">25 Custom Built Sites</div>
+          <ul class="pricing-features">
+            <li>Domains DR 25+ included</li>
+            <li>Elite cloud infrastructure mix</li>
+            <li>7 pages of seed content per site</li>
+            <li>Entity-optimized personas</li>
+            <li>Dedicated project manager</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" data-page="contact" style="width:100%; text-align:center; margin-top:1rem;">Build Agency Network</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-tier">Enterprise Network</div>
+          <div class="pricing-price">$1,500</div>
+          <div class="pricing-per">50 Custom Built Sites</div>
+          <ul class="pricing-features">
+            <li>Domains DR 30+ included</li>
+            <li>Maximum footprint mitigation</li>
+            <li>10 pages of seed content per site</li>
+            <li>CMS diversification (WP, HTML)</li>
+            <li>1 Year free hosting management</li>
+          </ul>
+          <a href="#contact" class="btn btn-dark" data-page="contact" style="width:100%; text-align:center; margin-top:1rem;">Build Enterprise Network</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-buy-pbn-domains">
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-tag">Pre-Vetted · Clean History · Ready to Rank</span>
+      <h1>Buy Premium <em>Expired Domains</em></h1>
+      <p>Skip the grueling auction wars and the risk of buying toxic assets. Acquire hand-picked, forensically audited expired domains with powerful natural backlink profiles. Perfect for your own PBN builds or high-powered 301 redirects.</p>
+      <div class="hero-btns">
+        <a href="#domain-inventory" class="btn btn-primary" onclick="document.getElementById('domain-inventory').scrollIntoView({behavior: 'smooth'})">View Inventory Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="domain-inventory" style="background: var(--dark-bg); color: var(--white);">
+    <div class="container reveal">
+      <span class="section-tag" style="color:var(--gold); text-align:center;">Live Inventory</span>
+      <h2 class="section-title" style="text-align:center; color:var(--white);">Acquire Your Next Asset</h2>
+      <p class="section-sub" style="margin: 0 auto 3rem; text-align:center; color:rgba(255,255,255,0.7);">Our inventory rotates daily. All domains are pushed to your preferred registrar upon purchase. Contact us for access to our unblinded domain list.</p>
+      
+      <div class="pricing-grid">
+        <div class="pricing-card" style="background:var(--ink); border: 1px solid rgba(255,255,255,0.1); color:var(--white);">
+          <div class="pricing-tier" style="color:var(--accent);">Foundation Domains</div>
+          <div class="pricing-price">$150<span style="font-size:1rem; color:var(--muted);"> - $350</span></div>
+          <div class="pricing-per" style="color:rgba(255,255,255,0.5);">Excellent for standard PBN builds & tier 2 link building</div>
+          <ul class="pricing-features">
+            <li style="border-bottom-color: rgba(255,255,255,0.1);">Domain Rating (DR): 15 - 25</li>
+            <li style="border-bottom-color: rgba(255,255,255,0.1);">Clean Archive.org History Guaranteed</li>
+            <li style="border-bottom-color: rgba(255,255,255,0.1);">Minimum 20+ Real Referring Domains</li>
+            <li style="border-bottom-color: rgba(255,255,255,0.1);">No Chinese/Russian Anchor Spam</li>
+            <li style="border-bottom-color: rgba(255,255,255,0.1);">Currently Indexed in Google</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" data-page="contact" style="text-align:center; margin-top:1rem;">Request Domain List</a>
+        </div>
+        
+        <div class="pricing-card featured" style="background:var(--white); color:var(--ink);">
+          <div class="pricing-tier" style="color:var(--accent);">Authority Domains</div>
+          <div class="pricing-price" style="color:var(--ink);">$400<span style="font-size:1rem; color:var(--muted);"> - $1,500+</span></div>
+          <div class="pricing-per" style="color:var(--muted);">For powerful 301s & primary money site foundations</div>
+          <ul class="pricing-features">
+            <li style="border-bottom-color: var(--border);">Domain Rating (DR): 30 - 60+</li>
+            <li style="border-bottom-color: var(--border);">Links from Wikipedia, NYT, Forbes, Edu/Gov</li>
+            <li style="border-bottom-color: var(--border);">Flawless Topical Backlink Profile</li>
+            <li style="border-bottom-color: var(--border);">Zero Drop History (Auction Exclusives)</li>
+            <li style="border-bottom-color: var(--border);">Trademark & Copyright Cleared</li>
+          </ul>
+          <a href="#contact" class="btn btn-dark" data-page="contact" style="text-align:center; margin-top:1rem;">Request Premium List</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-resources">
+  <section class="hero" style="padding-bottom: 5rem;">
+    <div class="hero-inner" style="text-align: center; margin: 0 auto;">
+      <span class="hero-tag">Knowledge Base</span>
+      <h1 style="margin-left: auto; margin-right: auto;">SEO Strategy & <em>Insights</em></h1>
+      <p style="margin-left: auto; margin-right: auto;">Master the art of off-page SEO with our deep-dive guides, technical analyses, and industry research on private blog networks.</p>
+    </div>
+  </section>
+
+  <section style="background: var(--paper); border-top: 1px solid var(--border);">
+    <div class="container reveal">
+      <div class="resources-grid" style="margin-top: 0;">
+        <div class="resource-card" data-nav="article-how-to-build-pbn">
+          <div class="resource-tag">Masterclass</div>
+          <h3>How to Build a PBN Network</h3>
+          <p>Domain acquisition, hosting setup, content strategy, and de-footprinting — the complete playbook for engineering your own digital assets.</p>
+          <span class="resource-read">Read Full Guide →</span>
+        </div>
+        <div class="resource-card" data-nav="article-are-pbn-safe">
+          <div class="resource-tag">Analysis</div>
+          <h3>Are PBN Backlinks Safe?</h3>
+          <p>A clear-eyed look at the real algorithmic risks, how serious SEOs mitigate them, and when controlled networks make strategic sense.</p>
+          <span class="resource-read">Read Analysis →</span>
+        </div>
+        <div class="resource-card" data-nav="article-what-is-pbn">
+          <div class="resource-tag">Explainer</div>
+          <h3>What Is PBN Link Building?</h3>
+          <p>The definitive explainer: how private blog networks fundamentally work, why they rank, and how to use them intelligently.</p>
+          <span class="resource-read">Read Explainer →</span>
+        </div>
+        <div class="resource-card" data-nav="article-best-pbn-strategies">
+          <div class="resource-tag">Strategy</div>
+          <h3>Best PBN Link Building Strategies</h3>
+          <p>Discover the exact deployment tactics, anchor text ratios, and tiering models used by enterprise SEOs to maximize ROI.</p>
+          <span class="resource-read">Read Strategy →</span>
+        </div>
+        <div class="resource-card" data-nav="article-rent-pbn-links">
+          <div class="resource-tag">Comparison</div>
+          <h3>Should You Rent PBN Links?</h3>
+          <p>Weighing the pros and cons of renting authority on a monthly basis versus investing in permanent digital asset equity.</p>
+          <span class="resource-read">Read Comparison →</span>
+        </div>
+        <div class="resource-card" data-nav="article-5-powerful-strategies">
+          <div class="resource-tag">Roundup</div>
+          <h3>5 Powerful & Underrated Link Building Strategies</h3>
+          <p>From highly contextual private networks to affordable digital PR distributions — unconventional tactics to bypass competitors.</p>
+          <span class="resource-read">Read Roundup →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-contact">
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-tag">Get In Touch</span>
+      <h1>Let's Build Your <em>Authority</em></h1>
+      <p>Whether you need a custom network build, bulk PBN links, or expert advice on your off-page strategy, our team is ready to assist.</p>
+    </div>
+  </section>
+
+  <section style="background: var(--paper);">
+    <div class="container reveal">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag">Direct Line</span>
+          <h2 style="font-family: 'Outfit', sans-serif; font-size: 2rem; margin-bottom: 1rem; font-weight: 800; color: var(--ink);">Reach Out to the Team</h2>
+          <p style="color: var(--muted); margin-bottom: 2rem;">We typically respond to all inquiries within 24 hours during standard business days. For urgent enterprise requests, please indicate in the subject line.</p>
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="font-size: 1.1rem; color: var(--ink); margin-bottom: 0.3rem;">Email Us</h4>
+            <p style="color: var(--muted);"><a href="mailto:hello@pbnlinkbuilding.com" style="color: var(--accent);">hello@pbnlinkbuilding.com</a></p>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form onsubmit="event.preventDefault(); alert('Form submitted successfully!');">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="5" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page" id="page-article-how-to-build-pbn">
+  <div class="article-header">
+    <span class="article-meta">Masterclass • 15 Min Read</span>
+    <h1>How to Build a PBN Network from Scratch</h1>
+  </div>
+  <div class="article-body">
+    <div class="article-content">
+      <p>Building a Private Blog Network (PBN) is one of the most effective ways to take total control over your search engine rankings. By owning the domains that link to your money sites, you dictate the anchor text, link velocity, and topical relevance. However, building a PBN incorrectly is the fastest way to earn a manual penalty from Google. This guide covers the exact, footprint-free methodology we use to build networks that withstand algorithmic scrutiny.</p>
+      
+      <h2>Step 1: Domain Acquisition (The Foundation)</h2>
+      <p>The entire premise of a PBN relies on acquiring domains that already possess historical authority. You are not registering fresh, $10 domains; you are hunting for expired or auction domains with rich backlink profiles.</p>
+      <ul>
+        <li><strong>Vetting Metrics:</strong> Do not rely solely on Domain Rating (DR) or Domain Authority (DA). These metrics are easily manipulated with spam blasts. Look for domains with a healthy Trust Flow to Citation Flow ratio (TF/CF) in Majestic.</li>
+        <li><strong>Backlink Auditing:</strong> Manually review the referring domains in Ahrefs. Are the links contextual? Are they coming from legitimate sites, or are they thousands of Russian forum comments?</li>
+        <li><strong>The Archive Check:</strong> Use the Wayback Machine (Archive.org) to view the history of the domain. If a domain was originally a local bakery, but was later repurposed into a Japanese casino affiliate site before dropping, it is toxic. Discard it.</li>
+      </ul>
+
+      <h2>Step 2: Cloud Infrastructure & Hosting</h2>
+      <p>In 2026, using traditional "SEO Hosting" (where a provider gives you multiple IP addresses on the same server block) is a guaranteed way to get your network de-indexed. You must host your domains on genuine, diverse cloud infrastructure.</p>
+      <p>Distribute your sites across premium providers like Amazon Web Services (AWS), Google Cloud Platform (GCP), DigitalOcean, Vultr, and Linode. This approach guarantees unique A, B, and C-Class IP addresses. Crucially, it also diversifies your Autonomous System Numbers (ASN). Furthermore, utilize different registrars (Namecheap, Porkbun, Cloudflare) and enable WHOIS privacy on every single domain.</p>
+
+      <h2>Step 3: CMS and Front-End Diversification</h2>
+      <p>If Google crawls 50 sites linking to your money page and notices they all run the exact same default WordPress theme with the exact same plugin stack, they will flag the cluster. You must break up your CMS footprint.</p>
+      <p>While WordPress is efficient, mix in static HTML/CSS builds, Webflow, or Ghost CMS. For your WordPress sites, use premium, unique themes for each domain. Disable XML-RPC, hide the WordPress REST API, and ensure you do not use the same Google Analytics or Search Console tracking codes across your network.</p>
+
+      <h2>Step 4: Entity Optimization and Content</h2>
+      <p>Gone are the days of spinning 300 words of unreadable text and stuffing a link at the bottom. To pass manual reviews, your PBN sites must look like passionate, legitimate blogs or small businesses.</p>
+      <p>Create detailed "About Us" and "Contact" pages with fictional, but realistic, personas. Generate standard Privacy Policies and Terms of Service pages. When writing the actual articles where your links will reside, use human writers (or heavily edited AI) to create long-form content enriched with LSI (Latent Semantic Indexing) keywords. The deeper the topical relevance of the article, the more powerful the link will be.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="page-article-are-pbn-safe">
+  <div class="article-header">
+    <span class="article-meta">Analysis • 12 Min Read</span>
+    <h1>Are PBN Backlinks Safe in 2026?</h1>
+  </div>
+  <div class="article-body">
+    <div class="article-content">
+      <p>The question of whether Private Blog Networks are "safe" is one of the most debated topics in the SEO industry. To answer it accurately, we must separate Google's public relations statements from the actual, mathematical reality of how search engine algorithms process inbound links in 2026.</p>
+      
+      <h2>The Technical Reality of Network Safety</h2>
+      <p>Technically speaking, all forms of intentional link building designed to manipulate PageRank—from guest posting to digital PR to PBNs—are violations of Google's Webmaster Guidelines. However, the algorithm cannot read intent; it can only read data. The safety of a PBN link relies entirely on the quality of the disguise.</p>
+      
+      <blockquote>
+        "If you buy PBN links from healthy, non-spammed websites that look like any other website, it is not only safe, but also highly effective." — <a href="https://pbnlinks.io/" target="_blank">as explained by experts at PBNLinks</a>.
+      </blockquote>
+
+      <h2>What Makes a PBN "Unsafe"?</h2>
+      <p>When SEOs claim that PBNs destroyed their website, the root cause is almost always catastrophic laziness in the network's construction. Algorithmic penalties occur when a network leaves undeniable, traceable footprints. These footprints include:</p>
+      <ul>
+        <li><strong>Toxic Histories:</strong> Building a network on domains that were previously penalized or spammed with adult/pharmaceutical links.</li>
+        <li><strong>Hosting Clusters:</strong> Hosting 100 domains on the exact same server IP or utilizing cheap "SEO Hosting" providers that Google actively monitors.</li>
+        <li><strong>Content Quality:</strong> Using raw, unedited AI content or scraped articles that trigger Google's Helpful Content classifiers, causing the network domain to be de-indexed.</li>
+        <li><strong>Link Velocity Spikes:</strong> Blasting a brand-new money site with 50 high-authority PBN links in a single week, creating an unnatural velocity pattern.</li>
+      </ul>
+
+      <h2>The Modern Blueprint for Safety</h2>
+      <p>If you execute a PBN strategy correctly, the links are virtually indistinguishable from genuine editorial endorsements. Safe PBNs are built on premium auction domains with clean histories. They are hosted on independent cloud servers (AWS, DigitalOcean, GCP) to randomize IPs and Name Servers. The content is written by human subject matter experts, and the sites feature standard trust signals (Privacy Policies, Contact pages, custom logos).</p>
+      <p>Ultimately, safety in PBN link building is a direct reflection of your budget and your operational security. If you are buying $2 links from public marketplaces, you are engaging in high-risk behavior. If you are investing in bespoke, footprint-free infrastructure, PBNs remain one of the safest and most reliable ways to engineer authority at scale.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="page-article-what-is-pbn">
+  <div class="article-header">
+    <span class="article-meta">Explainer • 10 Min Read</span>
+    <h1>What Is PBN Link Building?</h1>
+  </div>
+  <div class="article-body">
+    <div class="article-content">
+      <p>In the landscape of Search Engine Optimization (SEO), authority is heavily determined by backlinks—links from other websites pointing to yours. However, acquiring high-quality backlinks organically is incredibly difficult, expensive, and unpredictable. Enter the Private Blog Network (PBN).</p>
+      
+      <h2>Defining the Private Blog Network</h2>
+      <p>A Private Blog Network is a collection of authoritative, independent websites that are controlled by a single entity (an agency, an affiliate marketer, or an enterprise SEO team). The sole purpose of this network is to place controlled, highly optimized backlinks pointing to a primary "money site" to artificially boost its rankings in search engines like Google.</p>
+      
+      <h2>How Does a PBN Work?</h2>
+      <p>The mechanics of a PBN are deeply rooted in the concept of expired domains. Every day, thousands of businesses close, rebrand, or simply forget to renew their website domains. Many of these domains have accumulated years of high-quality backlinks from news outlets, universities, and industry directories.</p>
+      <p>PBN operators purchase these expired domains at auction, retaining all the inbound "link juice" (PageRank) the domain has gathered over its lifetime. The operator then rebuilds a fresh website on that domain, ensuring it looks like a legitimate, active blog or business. Finally, they publish an article on that newly rebuilt site containing a link to their target money site. The search engine crawls the PBN site, sees the high historical authority, and passes that trust through the link to the money site.</p>
+
+      <h2>The Advantages of PBN Link Building</h2>
+      <ul>
+        <li><strong>Absolute Control:</strong> When you execute a digital PR campaign, you cannot force a journalist to use your exact target keyword as the anchor text. With a PBN, you control the anchor text, the surrounding content, and the placement on the page.</li>
+        <li><strong>Predictability:</strong> You decide exactly when a link goes live, allowing you to tightly control your link velocity.</li>
+        <li><strong>Asset Equity:</strong> Instead of paying monthly retainers to rent links on other people's websites, building your own PBN means you own the digital real estate.</li>
+      </ul>
+      <p>While highly effective, PBN link building requires meticulous attention to operational security. The sites must be hosted on diverse IP addresses, feature unique designs, and contain high-quality content to prevent search engines from discovering that the sites are part of a connected network.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="page-article-best-pbn-strategies">
+  <div class="article-header">
+    <span class="article-meta">Strategy • 18 Min Read</span>
+    <h1>Best PBN Link Building Strategies</h1>
+  </div>
+  <div class="article-body">
+    <div class="article-content">
+      <p>Owning a Private Blog Network is like owning a high-performance sports car; if you do not know how to drive it, you are going to crash. Deploying PBN links requires a deep understanding of algorithmic thresholds, anchor text ratios, and tiering. Here are the best strategies for deploying PBN links to achieve maximum ROI.</p>
+      
+      <h2>1. The "Pillar & Push" Strategy</h2>
+      <p>The most common mistake new SEOs make is pointing PBN links directly at a brand-new money site that has zero existing authority. This is a massive red flag to search engines. The "Pillar & Push" strategy involves establishing a baseline of trust before deploying your network.</p>
+      <p>First, build a "pillar" of highly trusted, foundational links (citations, social profiles, niche directories, and high-tier guest posts). Once your money site has a baseline Domain Rating (DR) of 15 to 20, you "push" it to the top of the SERPs by firing your high-powered PBN links at your most profitable commercial landing pages.</p>
+
+      <h2>2. Anchor Text Blending</h2>
+      <p>If 100% of your PBN links use the exact-match anchor text "best personal injury lawyer miami," Google's Penguin algorithm will instantly penalize your site for manipulation. You must blend your anchor text perfectly. We recommend the following ratio for PBN deployments:</p>
+      <ul>
+        <li><strong>Branded Anchors (40%):</strong> (e.g., "Smith Law Group"). This builds entity trust.</li>
+        <li><strong>Naked URLs (20%):</strong> (e.g., "https://smithlaw.com"). Highly natural and safe.</li>
+        <li><strong>Generic Anchors (15%):</strong> (e.g., "click here," "read the full article").</li>
+        <li><strong>Partial Match (15%):</strong> (e.g., "this Miami based legal team").</li>
+        <li><strong>Exact Match (10%):</strong> (e.g., "Miami personal injury lawyer"). Use these sparingly, and ONLY place them on your absolute highest-powered PBN domains.</li>
+      </ul>
+
+      <h2>3. Tier 2 Link Building (The Shield)</h2>
+      <p>If you are operating in an incredibly high-risk niche, or if you have a massive budget and want to completely isolate your money site from direct PBN links, you utilize Tier 2 building. Instead of pointing the PBN link directly to your money site, you point it to a high-quality guest post or PR article that is already linking to your money site.</p>
+      <p>This strategy powers up the existing guest post, forcing it to pass significantly more authority to your money site, while creating a permanent algorithmic "shield" between your network and your primary business.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="page-article-rent-pbn-links">
+  <div class="article-header">
+    <span class="article-meta">Comparison • 14 Min Read</span>
+    <h1>Should You Rent PBN Links or Build Your Own?</h1>
+  </div>
+  <div class="article-body">
+    <div class="article-content">
+      <p>When incorporating Private Blog Networks into your SEO strategy, you eventually face a critical financial and operational crossroad: Should you rent links on an existing network provided by a vendor, or should you invest the capital to build and own the network yourself? The answer depends entirely on your scale, budget, and risk tolerance.</p>
+      
+      <h2>The Case for Renting PBN Links</h2>
+      <p>Renting links (buying placements on a vendor's network) is the most common entry point into PBNs. It offers significant advantages for agencies and local SEOs.</p>
+      <ul>
+        <li><strong>Zero Setup Time:</strong> You can place an order today and have high-authority homepage links pointing to your site within a week.</li>
+        <li><strong>Lower Initial Capital:</strong> You pay purely for the links you need (Operational Expenditure - OPEX). You don't need $10,000 upfront to buy domains at auction.</li>
+        <li><strong>No Maintenance:</strong> You do not have to worry about server updates, WordPress security, or writing seed content to keep the domains active. The vendor handles all the footprint mitigation.</li>
+      </ul>
+      <p>The primary downside to renting is vendor reliance. You must trust that the vendor is strictly managing their Outbound Link (OBL) count and not selling links to penalized or toxic websites alongside yours.</p>
+
+      <h2>The Case for Owning Your Network</h2>
+      <p>Building your own network transitions your SEO budget from an ongoing expense to Capital Expenditure (CAPEX). You are building a permanent digital asset.</p>
+      <ul>
+        <li><strong>Absolute Security:</strong> Because you are the only one placing links on the network, you know with 100% certainty that your money site is not sharing a neighborhood with spam, gambling, or adult sites.</li>
+        <li><strong>Long-Term ROI:</strong> If you manage SEO for an enterprise company or a portfolio of 10 affiliate sites, renting 50 links per month becomes exorbitantly expensive. By owning a 50-site network, you can link to all your properties infinitely for the cost of basic monthly hosting.</li>
+        <li><strong>Agility:</strong> If an algorithm update occurs or a client shifts their strategy, you can log in and change all your anchor texts or 301 redirect the domains instantly.</li>
+      </ul>
+      <p>If you need fast results for a single project, renting premium links from a highly vetted vendor is the optimal path. If you are scaling an agency or operating in verticals where a single lead is worth thousands of dollars, owning the infrastructure is the ultimate competitive advantage.</p>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="page-article-5-powerful-strategies">
+  <div class="article-header">
+    <span class="article-meta">Roundup • 16 Min Read</span>
+    <h1>5 Powerful & Underrated Link Building Strategies</h1>
+  </div>
+  <div class="article-body">
+    <div class="article-content">
+      <p>While content is the foundation of any SEO campaign, backlinks remain the primary fuel that drives organic traffic. However, traditional outreach and generic guest posting have become saturated, expensive, and largely ignored by webmasters. To dominate modern search results, you must leverage powerful, unconventional strategies. Here are the top five underrated link building tactics working right now.</p>
+      
+      <h2>1. Premium PBN Link Building</h2>
+      <p>The absolute fastest and most controlled way to inject authority into a website is through a meticulously crafted Private Blog Network. Unlike outreach, where you must beg a webmaster for a placement, PBNs allow you to dictate the exact anchor text, the surrounding semantic content, and the precise moment the link goes live. When built safely on premium cloud infrastructure and high-DR expired domains, PBN links offer an unparalleled return on investment in competitive niches.</p>
+
+      <h2>2. Digital PR and Press Releases</h2>
+      <p>Many SEOs ignore press releases, viewing them as a tactic from 2012. However, modern digital PR distributions are an incredibly affordable way to secure foundational brand trust. By utilizing services like <a href="https://prnow.io/cheap-press-release-distribution" target="_blank">press releases</a>, you can acquire high-authority, "nofollow" and "dofollow" syndication links from major media outlets like USA Today, AP News, and Yahoo Finance. This instantly establishes entity trust with Google, creating a safe baseline that allows you to hit the site harder with aggressive PBN links later.</p>
+
+      <h2>3. Strategic Niche Edits (Link Insertions)</h2>
+      <p>Instead of writing a brand new 2,000-word guest post, a niche edit involves reaching out to webmasters who have already published highly authoritative content relevant to your industry. You offer them a financial incentive (or a high-value resource swap) to simply insert your link into their existing, aged article. Because the page has already been indexed and has gathered its own inbound links over time, the link juice passes to your site much faster than a newly published guest post.</p>
+
+      <h2>4. HARO (Help A Reporter Out) and Source Platforms</h2>
+      <p>Journalists at major publications (Forbes, Business Insider, WSJ) constantly need quotes from industry experts. By aggressively monitoring platforms like HARO, Connectively, or Qwoted, you can provide concise, valuable insights to reporters. When they use your quote, they almost always provide a high-DR backlink to your homepage. This strategy requires consistency and rapid response times, but yields the highest quality editorial links possible.</p>
+
+      <h2>5. Broken Link Building (The Value Add)</h2>
+      <p>This classic strategy remains highly effective if executed with the right tools. Use Ahrefs to scan your competitors' backlink profiles and find links pointing to 404 (dead) pages on their site. You then recreate that missing content on your own website, making it better and more updated. Finally, you run an outreach campaign to every webmaster linking to the dead page, informing them of the broken link and suggesting your new, working resource as a replacement. You provide immense value by helping them clean up their site, resulting in a high conversion rate for link acquisition.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+          PBN<span>Link</span>Building
+        </div>
+        <p class="footer-desc">A premium PBN link building agency trusted by serious SEOs since 2016. High-quality links, real domains, and absolute transparency.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#" data-page="buy-pbn-links">Buy PBN Links</a>
+        <a href="#" data-page="buy-pbn-network">Build PBN Network</a>
+        <a href="#" data-page="buy-pbn-domains">Buy PBN Domains</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#" data-nav="article-how-to-build-pbn">How to Build a PBN</a>
+        <a href="#" data-nav="article-are-pbn-safe">Are PBNs Safe?</a>
+        <a href="#" data-nav="article-5-powerful-strategies">Link Building Strategies</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#" data-page="terms">Terms & Conditions</a>
+        <a href="#" data-page="privacy">Privacy Policy</a>
+        <a href="#" data-page="contact">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 PBN Link Building. All rights reserved.</span>
+      <div style="display:flex; gap:1.5rem;">
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---- SCROLL REVEAL ANIMATIONS ----
+document.addEventListener("DOMContentLoaded", function() {
+  const revealElements = document.querySelectorAll('.reveal');
+  
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // Only animate once
+      }
+    });
+  }, {
+    root: null,
+    threshold: 0.1, // Trigger when 10% visible
+    rootMargin: "0px 0px -50px 0px" // Trigger slightly before it hits bottom of viewport
+  });
+
+  revealElements.forEach(el => revealObserver.observe(el));
+});
+
+// ---- ROUTING ----
+function navigate(pageId) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const target = document.getElementById('page-' + pageId);
+  if (target) {
+    target.classList.add('active');
+    window.scrollTo(0, 0);
+    // update nav active state
+    document.querySelectorAll('.nav-links a[data-page]').forEach(a => {
+      a.classList.toggle('active', a.dataset.page === pageId);
+    });
+  }
+}
+
+// Handle all nav clicks
+document.addEventListener('click', function(e) {
+  const el = e.target.closest('[data-page]');
+  const el2 = e.target.closest('[data-nav]');
+  if (el) {
+    e.preventDefault();
+    navigate(el.dataset.page);
+    document.getElementById('main-nav').classList.remove('open');
+  } else if (el2) {
+    e.preventDefault();
+    navigate('article-' + el2.dataset.nav.replace('article-',''));
+    document.getElementById('main-nav').classList.remove('open');
+  }
+});
+
+// Hamburger
+document.getElementById('hamburger').addEventListener('click', function() {
+  document.getElementById('main-nav').classList.toggle('open');
+});
+
+// FAQ accordion
+document.addEventListener('click', function(e) {
+  const q = e.target.closest('.faq-question');
+  if (q) {
+    const item = q.closest('.faq-item');
+    item.classList.toggle('open');
+  }
+});
+
+// Init
+navigate('home');
+</script>
+</body>
+</html>
