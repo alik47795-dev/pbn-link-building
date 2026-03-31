@@ -1849,8 +1849,8 @@ const pageTitles = {
   'article-5-powerful-strategies': '5 Powerful & Underrated Link Building Strategies'
 };
 
-// ---- ROUTING ----
-function navigate(pageId) {
+// ---- ROUTING WITH SLUGS ----
+function navigate(pageId, pushState = true) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   const target = document.getElementById('page-' + pageId);
   if (target) {
@@ -1861,6 +1861,11 @@ function navigate(pageId) {
     if (pageTitles[pageId]) {
       document.title = pageTitles[pageId];
     }
+
+    // Update URL to create a shareable slug
+    if (pushState) {
+        window.history.pushState({page: pageId}, "", "#" + pageId);
+    }
     
     // update nav active state
     document.querySelectorAll('.nav-links a[data-page]').forEach(a => {
@@ -1868,6 +1873,16 @@ function navigate(pageId) {
     });
   }
 }
+
+// Handle back/forward browser buttons
+window.addEventListener("popstate", function(e) {
+    if (e.state && e.state.page) {
+        navigate(e.state.page, false);
+    } else {
+        let hash = window.location.hash.substring(1);
+        navigate(hash ? hash : 'home', false);
+    }
+});
 
 // Handle all nav clicks
 document.addEventListener('click', function(e) {
@@ -1879,7 +1894,8 @@ document.addEventListener('click', function(e) {
     document.getElementById('main-nav').classList.remove('open');
   } else if (el2) {
     e.preventDefault();
-    navigate('article-' + el2.dataset.nav.replace('article-',''));
+    let articleSlug = 'article-' + el2.dataset.nav.replace('article-','');
+    navigate(articleSlug);
     document.getElementById('main-nav').classList.remove('open');
   }
 });
@@ -1898,8 +1914,13 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// Init
-navigate('home');
+// Init based on URL hash (for bookmarks/direct links)
+let initialHash = window.location.hash.substring(1);
+if (initialHash && document.getElementById('page-' + initialHash)) {
+    navigate(initialHash, false);
+} else {
+    navigate('home', false);
+}
 </script>
 </body>
 </html>
